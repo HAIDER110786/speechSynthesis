@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Synthesis</title>
+    <link rel="stylesheet" href="./CSS/speechSynthesis.css">
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="speechSynthesis">
+            <center><h1>SPEECH SYNTHESIS</h1></center>
+            <select name="languageOptions" id="languageOptions">
+                <!-- <option value="placeholder" selected>Select Your Language</option> -->
+            </select>
+            <label for="rate">Range:</label>
+            <input type="range" name="rate" id="rate" value="5" min="0" max="10" step="1">
+            <label for="pitch">Pitch:</label>
+            <input type="range" name="pitch" id="pitch" value="1" min="0" max="2" step="0.2">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter What You Want To Be Spoken"></textarea>
+            <div class="buttons">
+                <button>Speak</button>
+                <button>Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/speechSynthesis.js"></script>
+</body>
+</html>
